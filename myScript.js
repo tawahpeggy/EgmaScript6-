@@ -190,7 +190,7 @@ function add(a, b) {
 //declaring an array comprising of different datatypes
 var arrayList = ['peggy', 'Anizet', 'Bih', true, 100, [1, true, 'sonia']
     , name = "peggy", level = "final year Fet", age = "23"
-    
+
 ];
 console.log(arrayList);
 //accessing a value in an array.
@@ -200,19 +200,19 @@ console.log(arrayList[0]);
 console.log(arrayList[5][2]);
 
 //writing a function inside an array
-var arrayWithFunction = ['peg',  'Anizet', 'Bih', true, 100, [1, true, 'sonia']
+var arrayWithFunction = ['peg', 'Anizet', 'Bih', true, 100, [1, true, 'sonia']
     , name = "peggy", level = "final year Fet", age = "23",
-    function (name){
+    function (name) {
 
         return ' hello ' + name //the spaces between the hello quotes will give it a space.
 
     }
 ];
 //here the value of index 0 is passed as a parameter to the value of index 9 which is a function.
-console.log(arrayWithFunction[9]  (arrayList[0]))
+console.log(arrayWithFunction[9](arrayList[0]))
 //changing values dynamically in arrays
-var colors=['red','green','blue']
-colors[0]='orange';
+var colors = ['red', 'green', 'blue']
+colors[0] = 'orange';
 console.log(colors);
 //push method
 //it adds an element at the end of an arrayList.
@@ -236,30 +236,31 @@ console.log(colors.indexOf('black'));
 //indexof elements that dont exixts returns -1
 console.log(colors.indexOf('pink'));
 //indexof showingoff its strengths
-if(colors.indexOf('pink')=== -1){
+if (colors.indexOf('pink') === -1) {
     colors.unshift('pink')
     console.log(colors);
 }
-else
-{console.log('sorry blue already exists')
+else {
+    console.log('sorry blue already exists')
 }
 //****************////**objects**////*******************
 //using the NEW keyWord
-var person=new Object();
-           person.name='peggy';
-           person.class='finalYear';
-           person.age=22;
-           console.log(person);
+var person = new Object();
+person.name = 'peggy';
+person.class = 'finalYear';
+person.age = 22;
+console.log(person);
 //using square brackets in the place of dots give same output.
-           var son=new Object();
-        son['name']='peggy';
-           son['class']='finalYear';
-           son['age']=22;
-           console.log(son);
+var son = new Object();
+son['name'] = 'peggy';
+son['class'] = 'finalYear';
+son['age'] = 22;
+console.log(son);
 
 //using literal notation
-var bookList={book1:"cahier",book2:"texte"[1,"pearl"],
-daughter:{firstName:"nico",lastName:"che"}
+var bookList = {
+    book1: "cahier", book2: "texte"[1, "pearl"],
+    daughter: { firstName: "nico", lastName: "che" }
 }
 console.log(bookList);
 
